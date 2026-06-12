@@ -1,11 +1,13 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { colors } from '@/styles/theme';
-import { Hero } from '@/components/sections/Hero';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/common/AnimatedSection';
 import { DiagonalDivider } from '@/components/common/DiagonalDivider';
 import { Card } from '@/components/common/Card';
 import { getPortfolioDataSync } from '@/lib/portfolio';
+
+const Hero = dynamic(() => import('@/components/sections/Hero').then(mod => mod.Hero), { ssr: false });
 
 const portfolio = getPortfolioDataSync();
 

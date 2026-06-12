@@ -5,7 +5,7 @@
     "email": "restow.frandha@gmail.com",
     "location": "Jakarta, Indonesia",
     "social": {
-      "linkedin": "https://linkedin.com/in/rfrandha",
+      "linkedin": "https://linkedin.com/in/restow-frandha",
       "github": "https://github.com/RFrandha"
     }
   },
@@ -26,7 +26,13 @@
         "Engineered a comprehensive payment Open API for seamless invoice processing, specializing in credit card transactions with immediate capture and authorization capabilities",
         "Ensured secure, tamper-proof partner communications by implementing both symmetric and asymmetric request signing and verification for the Open API"
       ],
-      "tech": ["Go", "gRPC", "RBAC", "Payment APIs", "Open API Design"]
+      "tech": [
+        "Go",
+        "gRPC",
+        "RBAC",
+        "Payment APIs",
+        "Open API Design"
+      ]
     },
     {
       "company": "Virgo",
@@ -43,7 +49,17 @@
         "Developed internal dashboards with Next.js for real-time monitoring",
         "Managed user identity and access with Ory Kratos and Ory Hydra for OAuth2 flows"
       ],
-      "tech": ["Go", "gRPC", "REST", "JWT", "Ory Kratos", "Ory Hydra", "Next.js", "QRIS", "Protobuf"]
+      "tech": [
+        "Go",
+        "gRPC",
+        "REST",
+        "JWT",
+        "Ory Kratos",
+        "Ory Hydra",
+        "Next.js",
+        "QRIS",
+        "Protobuf"
+      ]
     },
     {
       "company": "PT Advotics Technology Global",
@@ -59,7 +75,14 @@
         "Built FTP-based file processing services to automate and streamline data ingestion",
         "Utilized Apache Kafka for event-driven architecture and event sourcing, optimizing data flow"
       ],
-      "tech": ["Java", "Spring Boot", "REST APIs", "MySQL", "Apache Kafka", "Event-Driven Architecture"]
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "MySQL",
+        "Apache Kafka",
+        "Event-Driven Architecture"
+      ]
     },
     {
       "company": "PT Advotics Technology Global",
@@ -71,7 +94,11 @@
       "achievements": [
         "Developed a comprehensive Warehouse Management System (WMS) during a 3-month internship using Java Spring Boot"
       ],
-      "tech": ["Java", "Spring Boot", "MySQL"]
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "MySQL"
+      ]
     },
     {
       "company": "Pusat Ilmu Komputer UI",
@@ -86,55 +113,114 @@
         "Implemented unit and integration tests to ensure system reliability",
         "Utilized Python and Django to deliver robust software solutions"
       ],
-      "tech": ["Python", "Django", "CI/CD"]
+      "tech": [
+        "Python",
+        "Django",
+        "CI/CD"
+      ]
     }
   ],
   "skills": {
-    "languages": ["Go", "Java", "JavaScript", "TypeScript", "Python"],
-    "frameworks": ["Next.js", "Express", "Spring Boot", "gRPC"],
-    "tools": ["Docker", "Google Cloud", "MySQL", "Git", "Kafka", "Protobuf"],
-    "specialties": ["Microservices", "RESTful APIs", "gRPC", "OAuth2/OpenID Connect", "QRIS Payment Processing", "Event-Driven Architecture", "Clean Architecture", "Observability"]
+    "languages": [
+      "Go",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Python"
+    ],
+    "frameworks": [
+      "Next.js",
+      "Express",
+      "Spring Boot",
+      "gRPC"
+    ],
+    "tools": [
+      "Docker",
+      "Google Cloud",
+      "MySQL",
+      "Git",
+      "Kafka",
+      "Protobuf"
+    ],
+    "specialties": [
+      "Microservices",
+      "RESTful APIs",
+      "gRPC",
+      "OAuth2/OpenID Connect",
+      "QRIS Payment Processing",
+      "Event-Driven Architecture",
+      "Clean Architecture",
+      "Observability"
+    ]
   },
   "projects": [
     {
       "title": "Partner Portal with RBAC",
       "company": "Quickbill",
       "description": "Designed multi-user login architecture with Role-Based Access Control for partner portal scaling. Implemented secure request signing for API communications.",
-      "tech": ["Go", "gRPC", "RBAC", "Asymmetric Encryption"],
+      "tech": [
+        "Go",
+        "gRPC",
+        "RBAC",
+        "Asymmetric Encryption"
+      ],
       "link": "#"
     },
     {
       "title": "Payment Open API",
       "company": "Quickbill",
       "description": "Engineered comprehensive payment API for invoice processing with credit card transaction capabilities, immediate capture and authorization.",
-      "tech": ["Go", "REST APIs", "Payment Processing"],
+      "tech": [
+        "Go",
+        "REST APIs",
+        "Payment Processing"
+      ],
       "link": "#"
     },
     {
       "title": "Identity & Access Management",
       "company": "Virgo",
       "description": "Implemented OAuth2 and OpenID Connect using Ory Kratos and Ory Hydra for secure multi-user authentication and authorization.",
-      "tech": ["Ory Kratos", "Ory Hydra", "OAuth2", "OpenID Connect", "JWT"],
+      "tech": [
+        "Ory Kratos",
+        "Ory Hydra",
+        "OAuth2",
+        "OpenID Connect",
+        "JWT"
+      ],
       "link": "#"
     },
     {
       "title": "QRIS Payment Services",
       "company": "Virgo",
       "description": "Built and maintained payment services supporting QRIS (Quick Response Code Indonesian Standard) for Indonesian market integration.",
-      "tech": ["Go", "gRPC", "REST", "Payment Processing"],
+      "tech": [
+        "Go",
+        "gRPC",
+        "REST",
+        "Payment Processing"
+      ],
       "link": "#"
     },
     {
       "title": "Warehouse Management System",
       "company": "Advotics",
       "description": "Developed comprehensive WMS for supply chain management with real-time inventory tracking and reporting.",
-      "tech": ["Java", "Spring Boot", "MySQL"],
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "MySQL"
+      ],
       "link": "#"
     },
     {
       "title": "Wedding Invitation Website",
       "description": "Personal project: Modern, responsive wedding invitation website with RSVP functionality.",
-      "tech": ["Next.js", "Tailwind CSS", "TypeScript"],
+      "tech": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
       "link": "#"
     }
   ],

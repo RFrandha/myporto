@@ -1,0 +1,164 @@
+{
+  "personal": {
+    "name": "Restow Frandha",
+    "title": "Software Engineer",
+    "email": "restow.frandha@gmail.com",
+    "location": "Jakarta, Indonesia",
+    "social": {
+      "linkedin": "https://linkedin.com/in/rfrandha",
+      "github": "https://github.com/RFrandha"
+    }
+  },
+  "about": {
+    "summary": "Software Engineer with 6+ years building scalable microservices and backend platforms. Skilled in designing and delivering RESTful and gRPC APIs in Go and Java, applying clean architecture, observability, and performance optimization. Hands-on with secure identity and access (JWT, Ory Kratos/Hydra), payments (QRIS), and dashboards using Next.js. Collaborative, outcomes-driven, and agile—translating business needs into reliable, maintainable systems.",
+    "intro": "I'm a backend engineer passionate about building robust, scalable systems. With 6+ years of experience in microservices architecture, I've worked extensively with Go, Java, and modern distributed systems."
+  },
+  "experience": [
+    {
+      "company": "Quickbill",
+      "companyLong": "PT. Integrasi Keuangan Digital",
+      "position": "Software Engineer",
+      "period": "Mar 2026 - Present",
+      "location": "Jakarta Selatan",
+      "description": "Building scalable payment and invoicing solutions",
+      "achievements": [
+        "Enhanced partner portal scalability by designing a multi-user login architecture utilizing Role-Based Access Control (RBAC)",
+        "Engineered a comprehensive payment Open API for seamless invoice processing, specializing in credit card transactions with immediate capture and authorization capabilities",
+        "Ensured secure, tamper-proof partner communications by implementing both symmetric and asymmetric request signing and verification for the Open API"
+      ],
+      "tech": ["Go", "gRPC", "RBAC", "Payment APIs", "Open API Design"]
+    },
+    {
+      "company": "Virgo",
+      "companyLong": "PT. Capital Net Indonesia",
+      "position": "Software Engineer",
+      "period": "Nov 2021 - Mar 2026",
+      "location": "Jakarta Selatan",
+      "description": "Developed scalable APIs and identity management solutions",
+      "achievements": [
+        "Developed gRPC and REST APIs using Go with high-performance requirements",
+        "Implemented middleware and JWT-based authentication for secure microservices",
+        "Built and supported QRIS payment services for Indonesian market",
+        "Used gRPC with Protobuf for efficient service-to-service communication",
+        "Developed internal dashboards with Next.js for real-time monitoring",
+        "Managed user identity and access with Ory Kratos and Ory Hydra for OAuth2 flows"
+      ],
+      "tech": ["Go", "gRPC", "REST", "JWT", "Ory Kratos", "Ory Hydra", "Next.js", "QRIS", "Protobuf"]
+    },
+    {
+      "company": "PT Advotics Technology Global",
+      "companyLong": "PT Advotics Technology Global",
+      "position": "Software Engineer",
+      "period": "Sep 2019 - Nov 2021",
+      "location": "Jakarta Selatan",
+      "description": "Built Java-based SaaS solutions for supply chain management",
+      "achievements": [
+        "Developed Java-based SaaS solutions for supply chain management, improving operational efficiency",
+        "Designed and implemented RESTful APIs for seamless system integration",
+        "Applied unit testing and clean code principles to improve reliability and maintainability",
+        "Built FTP-based file processing services to automate and streamline data ingestion",
+        "Utilized Apache Kafka for event-driven architecture and event sourcing, optimizing data flow"
+      ],
+      "tech": ["Java", "Spring Boot", "REST APIs", "MySQL", "Apache Kafka", "Event-Driven Architecture"]
+    },
+    {
+      "company": "PT Advotics Technology Global",
+      "companyLong": "PT Advotics Technology Global",
+      "position": "Software Engineer Intern",
+      "period": "May 2019 - Aug 2019",
+      "location": "Jakarta Selatan",
+      "description": "Internship developing warehouse management systems",
+      "achievements": [
+        "Developed a comprehensive Warehouse Management System (WMS) during a 3-month internship using Java Spring Boot"
+      ],
+      "tech": ["Java", "Spring Boot", "MySQL"]
+    },
+    {
+      "company": "Pusat Ilmu Komputer UI",
+      "companyLong": "Pusat Ilmu Komputer Universitas Indonesia",
+      "position": "Fullstack Developer Intern",
+      "period": "Jan 2019 - Jan 2019",
+      "location": "Depok",
+      "description": "Enhanced and maintained faculty systems",
+      "achievements": [
+        "Enhanced room loan system for Computer Science Faculty through UI refactoring",
+        "Developed CI/CD pipelines for efficient system deployment",
+        "Implemented unit and integration tests to ensure system reliability",
+        "Utilized Python and Django to deliver robust software solutions"
+      ],
+      "tech": ["Python", "Django", "CI/CD"]
+    }
+  ],
+  "skills": {
+    "languages": ["Go", "Java", "JavaScript", "TypeScript", "Python"],
+    "frameworks": ["Next.js", "Express", "Spring Boot", "gRPC"],
+    "tools": ["Docker", "Google Cloud", "MySQL", "Git", "Kafka", "Protobuf"],
+    "specialties": ["Microservices", "RESTful APIs", "gRPC", "OAuth2/OpenID Connect", "QRIS Payment Processing", "Event-Driven Architecture", "Clean Architecture", "Observability"]
+  },
+  "projects": [
+    {
+      "title": "Partner Portal with RBAC",
+      "company": "Quickbill",
+      "description": "Designed multi-user login architecture with Role-Based Access Control for partner portal scaling. Implemented secure request signing for API communications.",
+      "tech": ["Go", "gRPC", "RBAC", "Asymmetric Encryption"],
+      "link": "#"
+    },
+    {
+      "title": "Payment Open API",
+      "company": "Quickbill",
+      "description": "Engineered comprehensive payment API for invoice processing with credit card transaction capabilities, immediate capture and authorization.",
+      "tech": ["Go", "REST APIs", "Payment Processing"],
+      "link": "#"
+    },
+    {
+      "title": "Identity & Access Management",
+      "company": "Virgo",
+      "description": "Implemented OAuth2 and OpenID Connect using Ory Kratos and Ory Hydra for secure multi-user authentication and authorization.",
+      "tech": ["Ory Kratos", "Ory Hydra", "OAuth2", "OpenID Connect", "JWT"],
+      "link": "#"
+    },
+    {
+      "title": "QRIS Payment Services",
+      "company": "Virgo",
+      "description": "Built and maintained payment services supporting QRIS (Quick Response Code Indonesian Standard) for Indonesian market integration.",
+      "tech": ["Go", "gRPC", "REST", "Payment Processing"],
+      "link": "#"
+    },
+    {
+      "title": "Warehouse Management System",
+      "company": "Advotics",
+      "description": "Developed comprehensive WMS for supply chain management with real-time inventory tracking and reporting.",
+      "tech": ["Java", "Spring Boot", "MySQL"],
+      "link": "#"
+    },
+    {
+      "title": "Wedding Invitation Website",
+      "description": "Personal project: Modern, responsive wedding invitation website with RSVP functionality.",
+      "tech": ["Next.js", "Tailwind CSS", "TypeScript"],
+      "link": "#"
+    }
+  ],
+  "blog": [
+    {
+      "title": "gRPC vs REST APIs: When to Use Each",
+      "slug": "grpc-vs-rest",
+      "date": "2026-06-12",
+      "excerpt": "Understanding the tradeoffs between gRPC and REST for API design in microservices architecture.",
+      "file": "grpc-vs-rest.md"
+    },
+    {
+      "title": "Building Secure Authentication with Ory Kratos",
+      "slug": "ory-kratos",
+      "date": "2026-06-12",
+      "excerpt": "A comprehensive guide to implementing identity and access management using Ory Kratos and Ory Hydra.",
+      "file": "ory-kratos.md"
+    },
+    {
+      "title": "Symmetric vs Asymmetric Encryption: A Practical Guide",
+      "slug": "symmetric-asymmetric",
+      "date": "2026-06-12",
+      "excerpt": "Understanding the differences and use cases of symmetric and asymmetric encryption in API design and request signing.",
+      "file": "symmetric-asymmetric.md"
+    }
+  ]
+}

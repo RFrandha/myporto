@@ -61,7 +61,7 @@ class ApiClient {
   }
 
   async submitContact(data: ContactFormData): Promise<ApiResponse> {
-    return this.post('/contact', data);
+    return this.post('/api/contact', data);
   }
 }
 

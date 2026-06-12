@@ -1,17 +1,34 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { colors } from '@/styles/theme';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/common/AnimatedSection';
 import { DiagonalDivider } from '@/components/common/DiagonalDivider';
 import { Card } from '@/components/common/Card';
-import { getPortfolioDataSync } from '@/lib/portfolio';
+import { Button } from '@/components/common/Button';
+import type { PortfolioDataLocal } from '@/lib/types';
 
 const Hero = dynamic(() => import('@/components/sections/Hero').then(mod => mod.Hero), { ssr: false });
 
-const portfolio = getPortfolioDataSync();
-
 export default function Home(): React.ReactElement {
+  const [portfolio, setPortfolio] = useState<PortfolioDataLocal | null>(null);
+
+  useEffect(() => {
+    fetch('/portfolio.json')
+      .then(res => res.json())
+      .then(data => setPortfolio(data))
+      .catch(err => console.error('Error loading portfolio:', err));
+  }, []);
+
+  if (!portfolio) {
+    return (
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: colors.primary.main }}>
+        <p style={{ color: colors.accent.main }}>Loading...</p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <Hero />
@@ -125,16 +142,21 @@ export default function Home(): React.ReactElement {
       </section>
       <DiagonalDivider color={colors.primary.main} direction="up" />
 
-      {/* Projects Section */}
+      {/* Projects Section - Latest 3 */}
       <section id="projects" className="py-20 px-4" style={{ backgroundColor: colors.primary.main }}>
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-center mb-12" style={{ color: colors.accent.main }}>
-              Projects
-            </h2>
+            <div className="flex justify-between items-center mb-12">
+              <h2 className="text-4xl font-bold" style={{ color: colors.accent.main }}>
+                Projects
+              </h2>
+              <a href="/projects">
+                <Button variant="outline" size="sm">View All</Button>
+              </a>
+            </div>
           </AnimatedSection>
           <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {portfolio.projects.map((project, idx) => (
+            {portfolio.projects.slice(0, 3).map((project, idx) => (
               <StaggerItem key={idx}>
                 <Card variant="elevated" className="h-full">
                   <h3 className="text-xl font-bold mb-2" style={{ color: colors.accent.main }}>{project.title}</h3>
@@ -153,16 +175,21 @@ export default function Home(): React.ReactElement {
       </section>
       <DiagonalDivider color={colors.primary.dark} />
 
-      {/* Blog Section */}
+      {/* Blog Section - Latest 3 */}
       <section id="blog" className="py-20 px-4" style={{ backgroundColor: colors.primary.dark }}>
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-center mb-12" style={{ color: colors.accent.main }}>
-              Blog
-            </h2>
+            <div className="flex justify-between items-center mb-12">
+              <h2 className="text-4xl font-bold" style={{ color: colors.accent.main }}>
+                Blog
+              </h2>
+              <a href="/blog">
+                <Button variant="outline" size="sm">View All</Button>
+              </a>
+            </div>
           </AnimatedSection>
           <StaggerContainer className="grid md:grid-cols-3 gap-6">
-            {portfolio.blog.map((post, idx) => (
+            {portfolio.blog.slice(0, 3).map((post, idx) => (
               <StaggerItem key={idx}>
                 <a href={`/blog/${post.slug}`}>
                   <Card variant="elevated" className="h-full hover:scale-105 transition-transform cursor-pointer">

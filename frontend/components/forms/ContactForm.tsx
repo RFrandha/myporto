@@ -59,7 +59,7 @@ export function ContactForm(): React.ReactElement {
         <label
           htmlFor="name"
           className="block text-sm font-medium mb-2"
-          style={{ color: colors.accent.gold }}
+          style={{ color: colors.accent.main }}
         >
           Name
         </label>
@@ -72,8 +72,8 @@ export function ContactForm(): React.ReactElement {
           required
           className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2"
           style={{
-            backgroundColor: colors.primary.lightNavy,
-            borderColor: colors.accent.gold,
+            backgroundColor: colors.primary.light,
+            borderColor: colors.accent.main,
             color: colors.neutral.white,
           }}
           placeholder="Your name"
@@ -84,7 +84,7 @@ export function ContactForm(): React.ReactElement {
         <label
           htmlFor="email"
           className="block text-sm font-medium mb-2"
-          style={{ color: colors.accent.gold }}
+          style={{ color: colors.accent.main }}
         >
           Email
         </label>
@@ -97,8 +97,8 @@ export function ContactForm(): React.ReactElement {
           required
           className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2"
           style={{
-            backgroundColor: colors.primary.lightNavy,
-            borderColor: colors.accent.gold,
+            backgroundColor: colors.primary.light,
+            borderColor: colors.accent.main,
             color: colors.neutral.white,
           }}
           placeholder="your.email@example.com"
@@ -109,7 +109,7 @@ export function ContactForm(): React.ReactElement {
         <label
           htmlFor="message"
           className="block text-sm font-medium mb-2"
-          style={{ color: colors.accent.gold }}
+          style={{ color: colors.accent.main }}
         >
           Message
         </label>
@@ -122,8 +122,8 @@ export function ContactForm(): React.ReactElement {
           rows={6}
           className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 resize-none"
           style={{
-            backgroundColor: colors.primary.lightNavy,
-            borderColor: colors.accent.gold,
+            backgroundColor: colors.primary.light,
+            borderColor: colors.accent.main,
             color: colors.neutral.white,
           }}
           placeholder="Your message..."

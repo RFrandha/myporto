@@ -1,0 +1,25 @@
+# Ignore markdown blog posts (need LLM API key)
+*.md
+*.mdx
+
+# Ignore node_modules
+node_modules/
+
+# Ignore build outputs
+.next/
+dist/
+build/
+
+# Ignore config files
+*.json
+
+# Ignore lock files
+package-lock.json
+
+# Ignore images (need vision LLM)
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico

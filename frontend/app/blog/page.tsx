@@ -10,13 +10,13 @@ export default async function BlogPage(): Promise<React.ReactElement> {
   const posts = await getAllBlogPosts();
 
   return (
-    <div style={{ backgroundColor: colors.primary.navy, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: colors.primary.main, minHeight: '100vh' }}>
       <Container>
         <div className="py-20 space-y-12">
           <div>
             <h1
               className="text-5xl font-bold mb-4"
-              style={{ color: colors.accent.gold }}
+              style={{ color: colors.accent.main }}
             >
               Blog
             </h1>

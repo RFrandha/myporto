@@ -63,7 +63,7 @@ export default async function BlogPostPage({
           <h1
             key={`h1-${i}`}
             className="text-4xl font-bold my-6"
-            style={{ color: colors.accent.gold }}
+            style={{ color: colors.accent.main }}
           >
             {line.substring(2)}
           </h1>
@@ -76,7 +76,7 @@ export default async function BlogPostPage({
           <h2
             key={`h2-${i}`}
             className="text-3xl font-bold my-4"
-            style={{ color: colors.accent.gold }}
+            style={{ color: colors.accent.main }}
           >
             {line.substring(3)}
           </h2>
@@ -89,7 +89,7 @@ export default async function BlogPostPage({
           <h3
             key={`h3-${i}`}
             className="text-2xl font-bold my-3"
-            style={{ color: colors.accent.gold }}
+            style={{ color: colors.accent.main }}
           >
             {line.substring(4)}
           </h3>
@@ -130,7 +130,7 @@ export default async function BlogPostPage({
                     <tr
                       key={idx}
                       className="border"
-                      style={{ borderColor: colors.primary.lightNavy }}
+                      style={{ borderColor: colors.primary.light }}
                     >
                       {row
                         .split('|')
@@ -186,13 +186,13 @@ export default async function BlogPostPage({
   };
 
   return (
-    <div style={{ backgroundColor: colors.primary.navy, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: colors.primary.main, minHeight: '100vh' }}>
       <Container maxWidth="lg">
         <article className="py-20 space-y-6">
-          <div className="border-b pb-8" style={{ borderColor: colors.primary.lightNavy }}>
+          <div className="border-b pb-8" style={{ borderColor: colors.primary.light }}>
             <h1
               className="text-4xl md:text-5xl font-bold mb-4"
-              style={{ color: colors.accent.gold }}
+              style={{ color: colors.accent.main }}
             >
               {post.title}
             </h1>

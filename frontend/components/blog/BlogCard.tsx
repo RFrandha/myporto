@@ -17,7 +17,7 @@ export function BlogCard({ post }: BlogCardProps): React.ReactElement {
         <div className="flex justify-between items-start mb-3">
           <p
             className="text-sm"
-            style={{ color: colors.accent.gold }}
+            style={{ color: colors.accent.main }}
           >
             {new Date(post.date).toLocaleDateString('en-US', {
               year: 'numeric',
@@ -36,7 +36,7 @@ export function BlogCard({ post }: BlogCardProps): React.ReactElement {
         </div>
         <h3
           className="text-xl font-bold mb-2 hover:text-gold transition-colors"
-          style={{ color: colors.accent.gold }}
+          style={{ color: colors.accent.main }}
         >
           {post.title}
         </h3>

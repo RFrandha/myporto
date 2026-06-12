@@ -12,13 +12,13 @@ export default function SkillsPage(): React.ReactElement {
   const { skills } = portfolio;
 
   return (
-    <div style={{ backgroundColor: colors.primary.navy, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: colors.primary.main, minHeight: '100vh' }}>
       <Container>
         <div className="py-20 space-y-12">
           <div>
             <h1
               className="text-5xl font-bold mb-4"
-              style={{ color: colors.accent.gold }}
+              style={{ color: colors.accent.main }}
             >
               Skills & Technologies
             </h1>
@@ -34,7 +34,7 @@ export default function SkillsPage(): React.ReactElement {
             <Card variant="elevated">
               <h2
                 className="text-2xl font-bold mb-6"
-                style={{ color: colors.accent.gold }}
+                style={{ color: colors.accent.main }}
               >
                 Languages
               </h2>
@@ -44,7 +44,7 @@ export default function SkillsPage(): React.ReactElement {
                     key={lang}
                     className="px-4 py-3 rounded-lg"
                     style={{
-                      backgroundColor: colors.primary.lightNavy,
+                      backgroundColor: colors.primary.light,
                       color: colors.neutral.white,
                     }}
                   >
@@ -57,7 +57,7 @@ export default function SkillsPage(): React.ReactElement {
             <Card variant="elevated">
               <h2
                 className="text-2xl font-bold mb-6"
-                style={{ color: colors.accent.gold }}
+                style={{ color: colors.accent.main }}
               >
                 Frameworks
               </h2>
@@ -67,7 +67,7 @@ export default function SkillsPage(): React.ReactElement {
                     key={framework}
                     className="px-4 py-3 rounded-lg"
                     style={{
-                      backgroundColor: colors.primary.lightNavy,
+                      backgroundColor: colors.primary.light,
                       color: colors.neutral.white,
                     }}
                   >
@@ -80,7 +80,7 @@ export default function SkillsPage(): React.ReactElement {
             <Card variant="elevated">
               <h2
                 className="text-2xl font-bold mb-6"
-                style={{ color: colors.accent.gold }}
+                style={{ color: colors.accent.main }}
               >
                 Tools & Platforms
               </h2>
@@ -90,7 +90,7 @@ export default function SkillsPage(): React.ReactElement {
                     key={tool}
                     className="px-4 py-3 rounded-lg"
                     style={{
-                      backgroundColor: colors.primary.lightNavy,
+                      backgroundColor: colors.primary.light,
                       color: colors.neutral.white,
                     }}
                   >
@@ -103,7 +103,7 @@ export default function SkillsPage(): React.ReactElement {
             <Card variant="elevated">
               <h2
                 className="text-2xl font-bold mb-6"
-                style={{ color: colors.accent.gold }}
+                style={{ color: colors.accent.main }}
               >
                 Specialties
               </h2>
@@ -113,7 +113,7 @@ export default function SkillsPage(): React.ReactElement {
                     key={specialty}
                     className="px-4 py-3 rounded-lg"
                     style={{
-                      backgroundColor: colors.primary.lightNavy,
+                      backgroundColor: colors.primary.light,
                       color: colors.neutral.white,
                     }}
                   >

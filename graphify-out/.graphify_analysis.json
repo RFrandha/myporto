@@ -1,0 +1,261 @@
+{
+  "communities": {
+    "0": [
+      "app_layout",
+      "app_layout_geistmono",
+      "app_layout_geistsans",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_layout_viewport",
+      "app_page",
+      "app_page_home",
+      "common_button",
+      "common_button_button",
+      "common_button_buttonprops",
+      "forms_contactform",
+      "layout_footer",
+      "layout_footer_footer",
+      "layout_footer_social_links",
+      "layout_navbar",
+      "layout_navbar_navbar",
+      "sections_hero",
+      "sections_hero_hero",
+      "styles_theme",
+      "styles_theme_borderradius",
+      "styles_theme_colors",
+      "styles_theme_darkmodeconfig",
+      "styles_theme_fontsize",
+      "styles_theme_lightmodeconfig",
+      "styles_theme_shadows",
+      "styles_theme_spacing",
+      "styles_theme_theme"
+    ],
+    "1": [
+      "handlers_contacthandler",
+      "handlers_contacthandler_handlecontactform",
+      "middleware_errorhandler",
+      "middleware_errorhandler_errorhandler",
+      "middleware_requestlogger",
+      "middleware_requestlogger_requestlogger",
+      "routes_contact",
+      "routes_contact_router",
+      "services_emailservice",
+      "services_emailservice_sendcontactemail",
+      "services_emailservice_transporter",
+      "services_validationservice",
+      "services_validationservice_contactschema",
+      "services_validationservice_validatecontactform",
+      "src_server",
+      "src_server_app",
+      "types_index",
+      "types_index_apiresponse",
+      "types_index_contactformdata",
+      "types_index_environmentconfig",
+      "utils_logger",
+      "utils_logger_logger",
+      "utils_responses",
+      "utils_responses_internalerrorresponse",
+      "utils_responses_notfoundresponse",
+      "utils_responses_successresponse",
+      "utils_responses_validationerrorresponse"
+    ],
+    "2": [
+      "about_page",
+      "about_page_aboutpage",
+      "about_page_portfolio",
+      "common_card",
+      "common_card_card",
+      "common_card_cardprops",
+      "common_container",
+      "common_container_container",
+      "common_container_containerprops",
+      "contact_page",
+      "contact_page_contactpage",
+      "experience_page",
+      "experience_page_experiencepage",
+      "experience_page_portfolio",
+      "forms_contactform_contactform",
+      "lib_portfolio",
+      "lib_portfolio_getportfoliodata",
+      "lib_portfolio_getportfoliodatasync",
+      "lib_types_portfoliodatalocal",
+      "projects_page",
+      "projects_page_portfolio",
+      "projects_page_projectspage",
+      "skills_page",
+      "skills_page_portfolio",
+      "skills_page_skillspage"
+    ],
+    "3": [
+      "blog_blogcard",
+      "blog_blogcard_blogcardprops",
+      "lib_api",
+      "lib_api_apiclient",
+      "lib_api_apiclient_constructor",
+      "lib_api_apiclient_get",
+      "lib_api_apiclient_post",
+      "lib_api_apiclient_request",
+      "lib_api_apiclient_submitcontact",
+      "lib_types",
+      "shared_types",
+      "shared_types_apiresponse",
+      "shared_types_blogpost",
+      "shared_types_contactformdata",
+      "shared_types_portfoliodata"
+    ],
+    "4": [
+      "blog_blogcard_blogcard",
+      "blog_page",
+      "blog_page_blogpage",
+      "lib_markdown",
+      "lib_markdown_blog_dir",
+      "lib_markdown_calculatereadingtime",
+      "lib_markdown_getallblogposts",
+      "lib_markdown_getblogpost",
+      "lib_markdown_markdowntohtml",
+      "lib_markdown_parsefrontmatter",
+      "slug_page",
+      "slug_page_blogpostpage",
+      "slug_page_blogpostpageprops"
+    ],
+    "5": [
+      "frontend_eslint_config",
+      "frontend_eslint_config_eslintconfig"
+    ],
+    "6": [
+      "frontend_next_config",
+      "frontend_next_config_nextconfig"
+    ],
+    "7": [
+      "frontend_postcss_config",
+      "frontend_postcss_config_config"
+    ],
+    "8": [
+      "frontend_next_env_d"
+    ]
+  },
+  "cohesion": {
+    "0": 0.12169312169312169,
+    "1": 0.16809116809116809,
+    "2": 0.15,
+    "3": 0.2857142857142857,
+    "4": 0.24358974358974358,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0
+  },
+  "gods": [
+    {
+      "id": "styles_theme_colors",
+      "label": "colors",
+      "degree": 17
+    },
+    {
+      "id": "common_container_container",
+      "label": "Container()",
+      "degree": 9
+    },
+    {
+      "id": "common_card_card",
+      "label": "Card()",
+      "degree": 8
+    },
+    {
+      "id": "handlers_contacthandler_handlecontactform",
+      "label": "handleContactForm()",
+      "degree": 7
+    },
+    {
+      "id": "lib_api_apiclient",
+      "label": "ApiClient",
+      "degree": 7
+    },
+    {
+      "id": "shared_types_apiresponse",
+      "label": "ApiResponse",
+      "degree": 7
+    },
+    {
+      "id": "utils_logger_logger",
+      "label": "logger",
+      "degree": 6
+    },
+    {
+      "id": "lib_markdown_getblogpost",
+      "label": "getBlogPost()",
+      "degree": 6
+    },
+    {
+      "id": "utils_responses_internalerrorresponse",
+      "label": "internalErrorResponse()",
+      "degree": 5
+    },
+    {
+      "id": "lib_portfolio_getportfoliodatasync",
+      "label": "getPortfolioDataSync()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "BlogCardProps",
+      "target": "BlogPost",
+      "source_files": [
+        "frontend/components/blog/BlogCard.tsx",
+        "shared/types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `BlogCardProps` unexpectedly reaches hub `BlogPost`"
+    },
+    {
+      "source": "BlogPostPage()",
+      "target": "getBlogPost()",
+      "source_files": [
+        "frontend/app/blog/[slug]/page.tsx",
+        "frontend/lib/markdown.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `BlogPostPage()` unexpectedly reaches hub `getBlogPost()`"
+    },
+    {
+      "source": "handleContactForm()",
+      "target": "sendContactEmail()",
+      "source_files": [
+        "backend/src/handlers/contactHandler.ts",
+        "backend/src/services/emailService.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "handleContactForm()",
+      "target": "validateContactForm()",
+      "source_files": [
+        "backend/src/handlers/contactHandler.ts",
+        "backend/src/services/validationService.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "handleContactForm()",
+      "target": "internalErrorResponse()",
+      "source_files": [
+        "backend/src/handlers/contactHandler.ts",
+        "backend/src/utils/responses.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

@@ -3,53 +3,49 @@
 import React from 'react';
 import { colors } from '@/styles/theme';
 
-interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline';
-  size?: 'sm' | 'md' | 'lg';
+interface ButtonProps {
   children: React.ReactNode;
+  variant?: 'primary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
+  className?: string;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }
 
-/**
- * Reusable button component with gold accent
- */
 export function Button({
+  children,
   variant = 'primary',
   size = 'md',
   className = '',
-  children,
-  ...props
+  type = 'button',
+  disabled = false,
 }: ButtonProps): React.ReactElement {
-  const baseStyles =
-    'font-semibold transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = `font-semibold rounded-lg transition-all duration-200 ${disabled ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'}`;
 
   const sizeStyles = {
-    sm: 'px-3 py-1 text-sm',
-    md: 'px-4 py-2 text-base',
-    lg: 'px-6 py-3 text-lg',
+    sm: 'px-4 py-2 text-sm',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-lg',
   };
 
   const variantStyles = {
-    primary: `bg-gold text-navy hover:bg-darkGold focus:ring-gold`,
-    secondary: `bg-navy text-white hover:bg-lightNavy focus:ring-gold`,
-    outline: `border-2 border-gold text-gold hover:bg-gold/10 focus:ring-gold`,
+    primary: {
+      background: colors.accentGradient,
+      color: colors.primary.dark,
+    },
+    outline: {
+      background: 'transparent',
+      color: colors.accent.main,
+      border: `2px solid ${colors.accent.main}`,
+    },
   };
 
   return (
     <button
-      className={`${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
-      style={{
-        backgroundColor:
-          variant === 'primary' ? colors.accent.gold : undefined,
-        borderColor: variant === 'outline' ? colors.accent.gold : undefined,
-        color:
-          variant === 'primary'
-            ? colors.primary.navy
-            : variant === 'outline'
-              ? colors.accent.gold
-              : colors.neutral.white,
-      }}
-      {...props}
+      type={type}
+      disabled={disabled}
+      className={`${baseStyles} ${sizeStyles[size]} ${className}`}
+      style={variantStyles[variant]}
     >
       {children}
     </button>

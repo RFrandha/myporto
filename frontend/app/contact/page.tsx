@@ -8,13 +8,13 @@ import { colors } from '@/styles/theme';
  */
 export default function ContactPage(): React.ReactElement {
   return (
-    <div style={{ backgroundColor: colors.primary.navy, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: colors.primary.main, minHeight: '100vh' }}>
       <Container>
         <div className="py-20 space-y-12">
           <div>
             <h1
               className="text-5xl font-bold mb-4"
-              style={{ color: colors.accent.gold }}
+              style={{ color: colors.accent.main }}
             >
               Get In Touch
             </h1>
@@ -31,7 +31,7 @@ export default function ContactPage(): React.ReactElement {
               <Card variant="elevated">
                 <h3
                   className="text-xl font-bold mb-2"
-                  style={{ color: colors.accent.gold }}
+                  style={{ color: colors.accent.main }}
                 >
                   Contact Information
                 </h3>
@@ -46,7 +46,7 @@ export default function ContactPage(): React.ReactElement {
               <Card>
                 <h4
                   className="font-semibold mb-2"
-                  style={{ color: colors.accent.gold }}
+                  style={{ color: colors.accent.main }}
                 >
                   Email
                 </h4>
@@ -62,7 +62,7 @@ export default function ContactPage(): React.ReactElement {
               <Card>
                 <h4
                   className="font-semibold mb-2"
-                  style={{ color: colors.accent.gold }}
+                  style={{ color: colors.accent.main }}
                 >
                   Location
                 </h4>
@@ -74,7 +74,7 @@ export default function ContactPage(): React.ReactElement {
               <Card>
                 <h4
                   className="font-semibold mb-4"
-                  style={{ color: colors.accent.gold }}
+                  style={{ color: colors.accent.main }}
                 >
                   Social Links
                 </h4>
@@ -83,7 +83,7 @@ export default function ContactPage(): React.ReactElement {
                     href="https://github.com/RFrandha"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: colors.accent.gold }}
+                    style={{ color: colors.accent.main }}
                     className="hover:underline block"
                   >
                     GitHub
@@ -92,7 +92,7 @@ export default function ContactPage(): React.ReactElement {
                     href="https://linkedin.com/in/rfrandha"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: colors.accent.gold }}
+                    style={{ color: colors.accent.main }}
                     className="hover:underline block"
                   >
                     LinkedIn
@@ -104,7 +104,7 @@ export default function ContactPage(): React.ReactElement {
             <Card variant="elevated">
               <h2
                 className="text-2xl font-bold mb-6"
-                style={{ color: colors.accent.gold }}
+                style={{ color: colors.accent.main }}
               >
                 Send Me a Message
               </h2>

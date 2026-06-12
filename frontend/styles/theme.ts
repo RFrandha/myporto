@@ -1,22 +1,78 @@
 /**
  * Theme Configuration
- * Navy + Gold color scheme for MyPorto portfolio
+ * 3 switchable color schemes - comment/uncomment to switch
  */
 
-export const colors = {
-  // Primary Colors (Navy)
+// ============================================================
+// SCHEME 1: Classic Navy + Gold (Original)
+// ============================================================
+/*
+const scheme = {
   primary: {
-    navy: '#001f3f',        // Deep navy - main background
-    darkNavy: '#000d1f',    // Darker navy - contrast
-    lightNavy: '#003d7a',   // Lighter navy - hover states
+    main: '#001f3f',
+    dark: '#000d1f',
+    light: '#003d7a',
   },
-
-  // Accent Colors (Gold)
   accent: {
-    gold: '#FFD700',        // Main gold accent
-    darkGold: '#DAA520',    // Dark gold for hover
-    lightGold: '#FFF8DC',   // Light gold - backgrounds
+    main: '#FFD700',
+    dark: '#DAA520',
+    light: '#FFF8DC',
   },
+  gradient: 'linear-gradient(135deg, #001f3f 0%, #000d1f 100%)',
+  accentGradient: 'linear-gradient(135deg, #FFD700 0%, #DAA520 100%)',
+};
+*/
+
+// ============================================================
+// SCHEME 2: Modern Tech - Purple + Cyan
+// ============================================================
+/*
+const scheme = {
+  primary: {
+    main: '#0f0f23',
+    dark: '#0a0a1a',
+    light: '#1a1a3e',
+  },
+  accent: {
+    main: '#7c3aed',
+    dark: '#6d28d9',
+    light: '#c4b5fd',
+    secondary: '#06b6d4',
+    secondaryDark: '#0891b2',
+  },
+  gradient: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%)',
+  accentGradient: 'linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%)',
+};
+*/
+
+// ============================================================
+// SCHEME 3: Elegant Dark - Teal + Gold (ACTIVE)
+// ============================================================
+const scheme = {
+  primary: {
+    main: '#0d1117',
+    dark: '#010409',
+    light: '#161b22',
+  },
+  accent: {
+    main: '#14b8a6',
+    dark: '#0d9488',
+    light: '#5eead4',
+    secondary: '#fbbf24',
+    secondaryDark: '#f59e0b',
+  },
+  gradient: 'linear-gradient(135deg, #0d1117 0%, #161b22 100%)',
+  accentGradient: 'linear-gradient(135deg, #14b8a6 0%, #fbbf24 100%)',
+};
+
+// ============================================================
+// Color Configuration (DO NOT CHANGE - derived from scheme)
+// ============================================================
+export const colors = {
+  primary: scheme.primary,
+  accent: scheme.accent,
+  gradient: scheme.gradient,
+  accentGradient: scheme.accentGradient,
 
   // Neutral Colors
   neutral: {
@@ -78,34 +134,12 @@ export const shadows = {
   xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
 };
 
-// Dark mode configuration
-export const darkModeConfig = {
-  background: colors.primary.darkNavy,
-  foreground: colors.neutral.white,
-  border: colors.primary.navy,
-  hoverBg: colors.primary.lightNavy,
-  accent: colors.accent.gold,
-  accentHover: colors.accent.darkGold,
-};
-
-// Light mode configuration (for future)
-export const lightModeConfig = {
-  background: colors.neutral.white,
-  foreground: colors.primary.darkNavy,
-  border: colors.neutral.lightGray,
-  hoverBg: colors.neutral.offWhite,
-  accent: colors.accent.darkGold,
-  accentHover: colors.accent.gold,
-};
-
 export const theme = {
   colors,
   spacing,
   fontSize,
   borderRadius,
   shadows,
-  dark: darkModeConfig,
-  light: lightModeConfig,
 };
 
 export default theme;

@@ -13,13 +13,13 @@ export default function ProjectsPage(): React.ReactElement {
   const { projects } = portfolio;
 
   return (
-    <div style={{ backgroundColor: colors.primary.navy, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: colors.primary.main, minHeight: '100vh' }}>
       <Container>
         <div className="py-20 space-y-12">
           <div>
             <h1
               className="text-5xl font-bold mb-4"
-              style={{ color: colors.accent.gold }}
+              style={{ color: colors.accent.main }}
             >
               Projects
             </h1>
@@ -37,7 +37,7 @@ export default function ProjectsPage(): React.ReactElement {
                 <div>
                   <h3
                     className="text-2xl font-bold mb-2"
-                    style={{ color: colors.accent.gold }}
+                    style={{ color: colors.accent.main }}
                   >
                     {project.title}
                   </h3>
@@ -58,14 +58,14 @@ export default function ProjectsPage(): React.ReactElement {
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 pt-4 border-t" style={{ borderColor: colors.primary.lightNavy }}>
+                <div className="flex flex-wrap gap-2 pt-4 border-t" style={{ borderColor: colors.primary.light }}>
                   {project.tech.map((tech: string) => (
                     <span
                       key={tech}
                       className="px-3 py-1 text-xs font-semibold rounded-full"
                       style={{
-                        backgroundColor: colors.primary.lightNavy,
-                        color: colors.accent.gold,
+                        backgroundColor: colors.primary.light,
+                        color: colors.accent.main,
                       }}
                     >
                       {tech}
@@ -79,7 +79,7 @@ export default function ProjectsPage(): React.ReactElement {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block font-semibold hover:underline"
-                    style={{ color: colors.accent.gold }}
+                    style={{ color: colors.accent.main }}
                   >
                     Learn More →
                   </Link>

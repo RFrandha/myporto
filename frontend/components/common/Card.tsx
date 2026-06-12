@@ -31,8 +31,8 @@ export function Card({
     <div
       className={`${baseStyles} ${variantStyles[variant]} ${className}`}
       style={{
-        backgroundColor: colors.primary.navy,
-        borderColor: variant === 'default' ? colors.accent.gold : undefined,
+        backgroundColor: colors.primary.main,
+        borderColor: variant === 'default' ? colors.accent.main : undefined,
         color: colors.neutral.white,
         ...style,
       }}

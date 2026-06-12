@@ -29,7 +29,7 @@ export interface PortfolioDataLocal {
     period: string;
     location: string;
     description: string;
-    achievements: string[];
+    summary: string;
     tech: string[];
   }>;
   skills: {

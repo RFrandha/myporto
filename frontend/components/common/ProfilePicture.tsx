@@ -12,7 +12,7 @@ interface ProfilePictureProps {
 export function ProfilePicture({
   src,
   alt = 'Restow Frandha',
-  size = 200,
+  size = 280,
 }: ProfilePictureProps): React.ReactElement {
   const hasImage = src && src.length > 0;
 
@@ -24,41 +24,29 @@ export function ProfilePicture({
       className="relative"
       style={{ width: size, height: size }}
     >
-      {/* Gradient border */}
       <div
-        className="absolute inset-0 rounded-full"
+        className="w-full h-full rounded-full overflow-hidden flex items-center justify-center"
         style={{
-          background: colors.accentGradient,
-          padding: '3px',
+          backgroundColor: colors.primary.dark,
+          border: `3px solid ${colors.accent.main}`,
+          boxShadow: `0 0 20px ${colors.accent.main}33`,
         }}
       >
-        <div
-          className="w-full h-full rounded-full overflow-hidden flex items-center justify-center"
-          style={{ backgroundColor: colors.primary.dark }}
-        >
-          {hasImage ? (
-            <img
-              src={src}
-              alt={alt}
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            /* Placeholder - initials */
-            <div
-              className="flex items-center justify-center w-full h-full"
-              style={{ color: colors.accent.main }}
-            >
-              <span className="text-5xl font-bold">RF</span>
-            </div>
-          )}
-        </div>
+        {hasImage ? (
+          <img
+            src={src}
+            alt={alt}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div
+            className="flex items-center justify-center w-full h-full"
+            style={{ color: colors.accent.main }}
+          >
+            <span className="text-5xl font-bold">RF</span>
+          </div>
+        )}
       </div>
-
-      {/* Glow effect */}
-      <div
-        className="absolute inset-0 rounded-full opacity-30 blur-xl"
-        style={{ background: colors.accentGradient }}
-      />
     </motion.div>
   );
 }

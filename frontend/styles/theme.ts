@@ -26,8 +26,7 @@ const scheme = {
 // ============================================================
 // SCHEME 2: Modern Tech - Purple + Cyan
 // ============================================================
-/*
-const scheme = {
+/*const scheme = {
   primary: {
     main: '#0f0f23',
     dark: '#0a0a1a',
@@ -42,8 +41,7 @@ const scheme = {
   },
   gradient: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%)',
   accentGradient: 'linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%)',
-};
-*/
+};*/
 
 // ============================================================
 // SCHEME 3: Elegant Dark - Teal + Gold (ACTIVE)

@@ -32,7 +32,7 @@ export function Hero(): React.ReactElement {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <ProfilePicture />
+          <ProfilePicture src="https://photos.rever.cyou/pub-img/profile-restow.jpg"/>
         </motion.div>
 
         <div className="text-center md:text-left space-y-6">
@@ -75,8 +75,8 @@ export function Hero(): React.ReactElement {
             transition={{ duration: 0.5, delay: 1.0 }}
             className="flex gap-4 justify-center md:justify-start flex-wrap pt-4"
           >
-            <a href="#projects"><Button>View My Work</Button></a>
-            <a href="#contact"><Button variant="outline">Get In Touch</Button></a>
+            <a href="/#projects"><Button>View My Work</Button></a>
+            <a href="/#contact"><Button variant="outline">Get In Touch</Button></a>
           </motion.div>
         </div>
       </div>

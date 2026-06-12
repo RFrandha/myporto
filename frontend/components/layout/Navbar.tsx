@@ -6,13 +6,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { colors } from '@/styles/theme';
 
 const navLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#skills', label: 'Skills' },
+  { href: '/#home', label: 'Home' },
+  { href: '/#about', label: 'About' },
+  { href: '/#experience', label: 'Experience' },
+  { href: '/#skills', label: 'Skills' },
   { href: '/projects', label: 'Projects' },
   { href: '/blog', label: 'Blog' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 export function Navbar(): React.ReactElement {
@@ -44,7 +44,7 @@ export function Navbar(): React.ReactElement {
     >
       <div className="flex items-center gap-6">
         <Link
-          href="#home"
+          href="/#home"
           className="text-xl font-bold hidden md:block"
           style={{ color: colors.accent.main }}
         >

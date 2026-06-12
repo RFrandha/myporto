@@ -7,6 +7,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/com
 import { DiagonalDivider } from '@/components/common/DiagonalDivider';
 import { Card } from '@/components/common/Card';
 import { Button } from '@/components/common/Button';
+import { ContactForm } from '@/components/forms/ContactForm';
 import type { PortfolioDataLocal } from '@/lib/types';
 
 const Hero = dynamic(() => import('@/components/sections/Hero').then(mod => mod.Hero), { ssr: false });
@@ -72,7 +73,10 @@ export default function Home(): React.ReactElement {
                     </div>
                     <p className="text-sm" style={{ color: colors.neutral.lightGray }}>{job.period}</p>
                   </div>
-                  <p className="mb-4" style={{ color: colors.neutral.lightGray }}>{job.description}</p>
+                  <p className="mb-3" style={{ color: colors.neutral.lightGray }}>{job.description}</p>
+                  {job.summary && (
+                    <p className="mb-4 text-sm leading-relaxed" style={{ color: colors.neutral.lightGray }}>{job.summary}</p>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {job.tech.map((tech) => (
                       <span key={tech} className="px-3 py-1 text-xs font-semibold rounded-full" style={{ backgroundColor: colors.primary.light, color: colors.accent.main }}>
@@ -214,17 +218,11 @@ export default function Home(): React.ReactElement {
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <Card variant="elevated" className="max-w-xl mx-auto text-center">
-              <p className="mb-6" style={{ color: colors.neutral.lightGray }}>
+            <Card variant="elevated" className="max-w-xl mx-auto">
+              <p className="mb-6 text-center" style={{ color: colors.neutral.lightGray }}>
                 Feel free to reach out for collaborations or just a friendly hello!
               </p>
-              <a
-                href="mailto:restow.frandha@gmail.com"
-                className="inline-block px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105"
-                style={{ background: colors.accentGradient, color: colors.primary.dark }}
-              >
-                Send Email
-              </a>
+              <ContactForm />
             </Card>
           </AnimatedSection>
         </div>

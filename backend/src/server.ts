@@ -28,7 +28,12 @@ app.get('/health', (req, res) => {
 // Error handler
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  logger.info(`Server running on http://localhost:${PORT}`);
-  logger.info(`CORS origin: ${CORS_ORIGIN}`);
-});
+// Vercel serverless exports the app, doesn't call listen
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    logger.info(`Server running on http://localhost:${PORT}`);
+    logger.info(`CORS origin: ${CORS_ORIGIN}`);
+  });
+}
+
+export default app;

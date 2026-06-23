@@ -126,8 +126,11 @@ export function ContactForm(): React.ReactElement {
             borderColor: colors.accent.main,
             color: colors.neutral.white,
           }}
-          placeholder="Your message..."
+          placeholder="Your message (min. 10 characters)..."
         />
+        <p className="text-xs mt-1" style={{ color: colors.neutral.gray }}>
+          {formData.message.length}/10 minimum characters
+        </p>
       </div>
 
       {status !== 'idle' && (

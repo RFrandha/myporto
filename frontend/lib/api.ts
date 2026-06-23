@@ -26,16 +26,17 @@ class ApiClient {
         ...options,
       });
 
+      const body = await response.json();
+
       if (!response.ok) {
         return {
-          code: 'INTERNAL_ERROR',
-          message: `HTTP ${response.status}`,
+          code: body.code || 'INTERNAL_ERROR',
+          message: body.message || `HTTP ${response.status}`,
           data: null,
         };
       }
 
-      const data = await response.json();
-      return data;
+      return body;
     } catch (error) {
       console.error('API Error:', error);
       return {

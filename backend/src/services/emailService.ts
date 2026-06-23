@@ -2,15 +2,22 @@ import nodemailer from 'nodemailer';
 import { ContactFormData } from '../types';
 import { logger } from '../utils/logger';
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: false,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
-  },
-});
+let transporter: nodemailer.Transporter | null = null;
+
+function getTransporter(): nodemailer.Transporter {
+  if (!transporter) {
+    transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT || '587'),
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    });
+  }
+  return transporter;
+}
 
 export async function sendContactEmail(data: ContactFormData): Promise<boolean> {
   try {
@@ -31,7 +38,7 @@ export async function sendContactEmail(data: ContactFormData): Promise<boolean> 
       `,
     };
 
-    await transporter.sendMail(mailOptions);
+    await getTransporter().sendMail(mailOptions);
     logger.info({ email: data.email, name: data.name }, 'Contact email sent');
     return true;
   } catch (error) {

@@ -27,7 +27,7 @@ export async function getPortfolioData(): Promise<PortfolioDataLocal> {
         email: 'restow.frandha@gmail.com',
         location: 'Jakarta, Indonesia',
         social: {
-          linkedin: 'https://linkedin.com/in/rfrandha',
+          linkedin: 'https://linkedin.com/in/restow-frandha',
           github: 'https://github.com/RFrandha',
         },
       },
@@ -73,7 +73,7 @@ export function getPortfolioDataSync(): PortfolioDataLocal {
       email: 'restow.frandha@gmail.com',
       location: 'Jakarta, Indonesia',
       social: {
-        linkedin: 'https://linkedin.com/in/rfrandha',
+        linkedin: 'https://linkedin.com/in/restow-frandha',
         github: 'https://github.com/RFrandha',
       },
     },
